@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TKD Live</string>
+    <string name="title_tournament">Turnering</string>
+    <string name="title_settings">Instillinger</string>
+    <string name="title_live_score">Live - %s</string>
+    <string name="label_fight_amount">Kamper:</string>
+    <string name="label_competitors_amount">Utøvere:</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4a148c</color>
+    <color name="colorPrimaryDark">#12005e</color>
+    <color name="colorPrimaryLight">#7c43bd</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorHong">#FF2828</color>
+    <color name="colorHongWinner">#9F0000</color>
+    <color name="colorChong">#2828FF</color>
+    <color name="colorChongWinner">#00009F</color>
+</resources>

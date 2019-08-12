@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_host_fragment"
+            app:startDestination="@id/tournamentOverview">
+
+    <fragment android:id="@+id/tournamentOverview"
+              android:name="talgoe.mobcon.live_tkd_score.tournamentoverview.TournamentOverview"
+              android:label="tournament_overview_fragment" tools:layout="@layout/tournament_overview_fragment">
+        <action android:id="@+id/action_tournamentOverview_to_liveTrackerFragment"
+                app:destination="@id/liveTrackerFragment" app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+                app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action android:id="@+id/action_tournamentOverview_to_settingsFragment" app:destination="@id/settingsFragment"
+                app:enterAnim="@anim/nav_default_enter_anim" app:exitAnim="@anim/nav_default_exit_anim"
+                app:popEnterAnim="@anim/nav_default_enter_anim" app:popExitAnim="@anim/nav_default_exit_anim"/>
+        <action android:id="@+id/action_tournamentOverview_to_competitorFragment"
+                app:destination="@id/competitorFragment"/>
+    </fragment>
+    <fragment android:id="@+id/liveTrackerFragment"
+              android:name="talgoe.mobcon.live_tkd_score.details.LiveTrackerFragment"
+              android:label="live_tracker_fragment"
+              tools:layout="@layout/live_tracker_fragment">
+              <argument
+                      android:name="selectedTournament"
+                      app:argType="talgoe.mobcon.live_tkd_score.models.TournamentModel"
+              />
+    </fragment>
+    <fragment android:id="@+id/settingsFragment" android:name="talgoe.mobcon.live_tkd_score.SettingsFragment"
+              android:label="settings_fragment" tools:layout="@layout/settings_fragment"/>
+    <fragment android:id="@+id/competitorFragment"
+              android:name="talgoe.mobcon.live_tkd_score.details.CompetitorFragment" android:label="competitor_fragment"
+              tools:layout="@layout/competitor_fragment">
+        <argument
+                android:name="selectedTournament"
+                app:argType="talgoe.mobcon.live_tkd_score.models.TournamentModel"
+        />
+    </fragment>
+</navigation>

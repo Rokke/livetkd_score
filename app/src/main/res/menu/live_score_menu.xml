@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+            android:id="@+id/group_dates"
+    >
+    </group>
+    <item android:title="Refresh" android:id="@+id/menu_live_score_refresh"
+          android:icon="@android:drawable/ic_popup_sync" app:showAsAction="always"/>
+</menu>

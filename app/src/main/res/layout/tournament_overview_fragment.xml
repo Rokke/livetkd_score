@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context="talgoe.mobcon.live_tkd_score.tournamentoverview.TournamentOverview">
+    <data>
+        <variable name="viewModel" type="talgoe.mobcon.live_tkd_score.tournamentoverview.TournamentOverviewViewModel"/>
+    </data>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recycler_tournament_list"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:listData="@{viewModel.tournaments}"
+                tools:listitem="@layout/tournament_view_item"
+                tools:itemCount="6"/>
+    </LinearLayout>
+</layout>
